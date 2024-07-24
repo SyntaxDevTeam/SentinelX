@@ -6,14 +6,14 @@
 
     <groupId>pl.syntaxerr</groupId>
     <artifactId>SentinelX</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0-Spigot</version>
     <packaging>jar</packaging>
 
     <name>SentinelX</name>
 
     <properties>
         <java.version>21</java.version>
-        <kotlin.version>2.0.0</kotlin.version>
+        <kotlin.version>2.0.20-Beta2</kotlin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
