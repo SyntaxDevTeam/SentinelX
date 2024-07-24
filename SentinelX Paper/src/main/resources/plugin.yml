@@ -1,0 +1,7 @@
+name: SentinelX
+version: '1.0-SNAPSHOT'
+main: pl.syntaxerr.sentinelex.SentinelX
+api-version: '1.21'
+authors: [ Syntaxerr ]
+description: Cenzor zamieniający niecenzuralne słowa na ocenzurowaną wersję lub całkowite ich usunięcie
+website: https://github.com/SyntaxDevTeam/SentinelX
