@@ -326,3 +326,7 @@ bannedWords:
   - wypierdalaj
   - kur.wa
   - chujowo
+  -
+# Czy bStats powinien być włączony?
+bStats:
+  enabled: true

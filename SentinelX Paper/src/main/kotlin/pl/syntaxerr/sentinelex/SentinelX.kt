@@ -5,6 +5,7 @@ import io.papermc.paper.plugin.lifecycle.event.LifecycleEventManager
 import io.papermc.paper.plugin.lifecycle.event.types.LifecycleEvents
 import net.kyori.adventure.text.Component
 import net.kyori.adventure.text.TextComponent
+import org.bstats.bukkit.Metrics
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
 import org.bukkit.plugin.Plugin
@@ -29,6 +30,8 @@ class SentinelX : JavaPlugin(), Listener {
         this.wordFilter = WordFilter(bannedWords)
         this.fullCensorship = config.getBoolean("fullCensorship")
         server.pluginManager.registerEvents(this, this)
+        val pluginId = 22781
+        val metrics = Metrics(this, pluginId)
     }
 
     override fun onDisable() {

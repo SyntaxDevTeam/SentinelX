@@ -1,5 +1,6 @@
 package pl.syntaxerr.sentinelex
 
+import org.bstats.bukkit.Metrics
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
 import org.bukkit.event.player.AsyncPlayerChatEvent
@@ -20,6 +21,8 @@ class SentinelX : JavaPlugin(), Listener {
         server.pluginManager.registerEvents(this, this)
         getCommand("sentinelx")?.setExecutor(SentinelXCommand(this))
         getCommand("slx")?.setExecutor(SentinelXCommand(this))
+        val pluginId = 22781
+        val metrics = Metrics(this, pluginId)
     }
 
     override fun onDisable() {
