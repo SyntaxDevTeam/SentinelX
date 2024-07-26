@@ -12,6 +12,11 @@ import org.bukkit.plugin.Plugin
 import org.bukkit.plugin.java.JavaPlugin
 import java.util.*
 
+/**
+ * Sentinel x
+ *
+ * @constructor Create empty Sentinel x
+ */
 @Suppress("UnstableApiUsage")
 class SentinelX : JavaPlugin(), Listener {
 
@@ -39,6 +44,10 @@ class SentinelX : JavaPlugin(), Listener {
         AsyncChatEvent.getHandlerList().unregister(this as Plugin)
     }
 
+    /**
+     * Restart my sentinel task
+     *
+     */
     fun restartMySentinelTask() {
         try {
             AsyncChatEvent.getHandlerList().unregister(this as Plugin)
@@ -57,6 +66,11 @@ class SentinelX : JavaPlugin(), Listener {
         server.pluginManager.registerEvents(this, this)
     }
 
+    /**
+     * On chat
+     *
+     * @param event
+     */
     @EventHandler
     fun onChat(event: AsyncChatEvent) {
         val message: String = (event.originalMessage() as TextComponent).content()
@@ -66,12 +80,31 @@ class SentinelX : JavaPlugin(), Listener {
     }
 }
 
+/**
+ * Word filter
+ *
+ * @property bannedWords
+ * @constructor Create empty Word filter
+ */
 class WordFilter(private val bannedWords: List<String>) {
 
+    /**
+     * Contains banned word
+     *
+     * @param message
+     * @return
+     */
     fun containsBannedWord(message: String): Boolean {
         return bannedWords.any { message.contains(it) }
     }
 
+    /**
+     * Censor message
+     *
+     * @param message
+     * @param fullCensorship
+     * @return
+     */
     fun censorMessage(message: String, fullCensorship: Boolean): String {
         val words = message.split("\\s+".toRegex()).toMutableList()
         for (i in words.indices) {

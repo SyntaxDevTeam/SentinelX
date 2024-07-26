@@ -5,6 +5,12 @@ import io.papermc.paper.command.brigadier.CommandSourceStack
 import org.bukkit.plugin.PluginDescriptionFile
 import org.jetbrains.annotations.NotNull
 
+/**
+ * Sentinel x command
+ *
+ * @property plugin
+ * @constructor Create empty Sentinel x command
+ */
 @Suppress("UnstableApiUsage")
 class SentinelXCommand(private val plugin: SentinelX) : BasicCommand {
 
