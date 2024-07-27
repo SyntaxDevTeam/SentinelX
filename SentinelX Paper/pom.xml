@@ -53,7 +53,7 @@
                     <relocations>
                         <relocation>
                             <pattern>org.bstats</pattern>
-                            <shadedPattern>pl.syntaxerr</shadedPattern>
+                            <shadedPattern>pl.syntaxerr.SentinelX</shadedPattern>
                         </relocation>
                     </relocations>
                 </configuration>

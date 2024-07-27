@@ -1,11 +1,15 @@
 # SentinelX
 
-SentinelX to nowoczesny plugin dla serwera Minecraft oparty na silniku Spigot/Paper. Napisany w języku Kotlin, oferuje zaawansowane rozwiązania techniczne, które poprawiają jego wydajność i dodaja przydatną funkcjonalność twojego serwera.
+SentinelX to nowoczesny plugin dla serwerów Minecraft, którego głównym zadaniem jest cenzurowanie czatu w trybie
+automatycznym przez zamianę wulgaryzmów w ich wersje ocenzurowane bądź też całkowicie usuwając wybrane słowa.
 
-## Główne cechy
-* Ochrona czatu: Plugin automatycznie cenzuruje wulgarne słowa i nieodpowiednie treści w czacie.
-* Konfigurowalny: Dzięki plikowi konfiguracyjnemu możesz dostosować działanie pluginu do swoich potrzeb.
-* Wykorzystuje Kotlin: Napisany w nowoczesnym języku programowania Kotlin, który jest bardziej ekspresyjny i bezpieczny niż Java.
+## Informacje
+* SentinelX został napisany i zaprojektowany specjalnie pod (obecnie) najnowszą wersję Minecraft 1.21
+* Wymaga Javy 21 lub nowszej, aby działać poprawnie
+* Napisany w nowoczesnym języku programowania Kotlin, który jest bardziej ekspresyjny
+i bezpieczny niż Java.
+* Jeśli masz jakieś pytania, być może znajdziesz na nie rozwiązanie na naszym [discordzie](https://discord.gg/KNstae3UEV)
+
 ## Instalacja
 * Pobierz najnowszą wersję pluginu z sekcji wydań.
 * Umieść plik JAR w folderze plugins na swoim serwerze.

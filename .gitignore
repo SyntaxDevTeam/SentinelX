@@ -1,0 +1,14 @@
+LICENSE
+README.md
+.idea/.gitignore
+.idea/compiler.xml
+.idea/discord.xml
+.idea/encodings.xml
+.idea/jarRepositories.xml
+.idea/kotlinc.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/SentinelX.iml
+.idea/vcs.xml
+SentinelX Paper/.gitignore
+SentinelX Spigot/.gitignore
