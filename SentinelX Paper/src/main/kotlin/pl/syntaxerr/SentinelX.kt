@@ -136,6 +136,15 @@ class SentinelX : JavaPlugin(), Listener {
             event.message(Component.text(wordFilter.censorMessage(message, fullCensorship)))
         }
     }
+    fun addBannedWord(word: String) {
+        val bannedWords = config.getStringList("bannedWords")
+        if (!bannedWords.contains(word)) {
+            bannedWords.add(word)
+            config.set("bannedWords", bannedWords)
+            saveConfig()
+            restartMySentinelTask()
+        }
+    }
 }
 
 /**
