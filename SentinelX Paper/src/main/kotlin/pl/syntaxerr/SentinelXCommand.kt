@@ -41,6 +41,19 @@ class SentinelXCommand(private val plugin: SentinelX) : BasicCommand {
                         stack.sender.sendRichMessage("Nie masz uprawnień do tej komendy.")
                     }
                 }
+                args[0].equals("addword", ignoreCase = true) -> {
+                    if (stack.sender.hasPermission("SentinelX.addword")) {
+                        if (args.size > 1) {
+                            val newWord = args[1]
+                            plugin.addBannedWord(newWord)
+                            stack.sender.sendMessage("<green>Dodano nowe zakazane słowo: $newWord</green>")
+                        } else {
+                            stack.sender.sendMessage("<red>Proszę podać słowo do dodania.</red>")
+                        }
+                    } else {
+                        stack.sender.sendMessage("Nie masz uprawnień do tej komendy.")
+                    }
+                }
                 else -> {
                     stack.sender.sendRichMessage("<green>Wpisz /slx help aby sprawdzić dostępne komendy")
                 }
