@@ -1,4 +1,4 @@
-package pl.syntaxerr.sentinelex
+package pl.syntaxerr
 
 import org.bukkit.command.Command
 import org.bukkit.command.CommandExecutor

@@ -5,21 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de51ba02-0d9f-4681-b6c3-a1b5916bc04a" name="Changes" comment="reorganization of directory structures">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/SentinelX.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/SentinelXCommand.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SentinelX Spigot/src/main/kotlin/pl/syntaxerr/SentinelX.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SentinelX Spigot/src/main/kotlin/pl/syntaxerr/SentinelXCommand.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SentinelX Paper/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Paper/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/sentinelex/SentinelX.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/sentinelex/SentinelXCommand.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SentinelX Paper/src/main/resources/paper-plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/resources/paper-plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SentinelX Spigot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Spigot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SentinelX Spigot/src/main/kotlin/pl/syntaxerr/sentinelex/SentinelX.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SentinelX Spigot/src/main/kotlin/pl/syntaxerr/sentinelex/SentinelXCommand.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SentinelX Spigot/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Spigot/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/SentinelX.kt" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/SentinelX.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/SentinelXCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/SentinelXCommand.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SentinelX Spigot/src/main/kotlin/pl/syntaxerr/SentinelX.kt" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Spigot/src/main/kotlin/pl/syntaxerr/SentinelX.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SentinelX Spigot/src/main/kotlin/pl/syntaxerr/SentinelXCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Spigot/src/main/kotlin/pl/syntaxerr/SentinelXCommand.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,29 +46,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.SentinelX [clean].executor": "Run",
-    "Maven.SentinelX [package].executor": "Run",
-    "Maven.SentinelX [test].executor": "Run",
-    "Maven.SentinelX [validate].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JDK": "corretto-21",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/emero/OneDrive/Dokumenty/GitHub - Projekty/SentinelX/SentinelX Spigot",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.6229885",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.SentinelX [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.SentinelX [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.SentinelX [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.SentinelX [validate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JDK&quot;: &quot;corretto-21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/emero/OneDrive/Dokumenty/GitHub - Projekty/SentinelX/SentinelX Spigot&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.6229885&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   },
-  "keyToStringList": {
-    "jdk.preference.JDK": [
-      "21=C:/Users/emero/scoop/apps/corretto21-jdk/current"
+  &quot;keyToStringList&quot;: {
+    &quot;jdk.preference.JDK&quot;: [
+      &quot;21=C:/Users/emero/scoop/apps/corretto21-jdk/current&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\emero\OneDrive\Dokumenty\GitHub - Projekty\SentinelX\SentinelX Spigot\src\main\resources" />
@@ -172,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722013388390</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="reorganization of directory structures">
+      <option name="closed" value="true" />
+      <created>1722064414697</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1722064414697</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,6 +190,7 @@
     <MESSAGE value="TODO: Add SPONGE support" />
     <MESSAGE value="Added bStats" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="reorganization of directory structures" />
+    <option name="LAST_COMMIT_MESSAGE" value="reorganization of directory structures" />
   </component>
 </project>

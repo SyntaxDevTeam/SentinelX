@@ -1,4 +1,4 @@
-package pl.syntaxerr.sentinelex
+package pl.syntaxerr
 
 import org.bstats.bukkit.Metrics
 import org.bukkit.event.EventHandler
