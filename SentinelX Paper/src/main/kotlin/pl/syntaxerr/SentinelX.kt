@@ -1,4 +1,4 @@
-package pl.syntaxerr.sentinelex
+package pl.syntaxerr
 import io.papermc.paper.command.brigadier.Commands
 import io.papermc.paper.event.player.AsyncChatEvent
 import io.papermc.paper.plugin.lifecycle.event.LifecycleEventManager
@@ -13,16 +13,41 @@ import org.bukkit.plugin.java.JavaPlugin
 import java.util.*
 
 /**
- * Sentinel x
+ * EN:
+ * Main class of the SentinelX plugin.
+ * This class inherits from JavaPlugin and implements the Listener interface.
+ * It contains methods for handling plugin enable and disable events,
+ * as well as chat event handling and word filter management methods.
  *
- * @constructor Create empty Sentinel x
+ * PL:
+ * Główna klasa pluginu SentinelX.
+ * Ta klasa dziedziczy po JavaPlugin i implementuje interfejs Listener.
+ * Zawiera metody do obsługi zdarzeń włączania i wyłączania pluginu,
+ * a także metody do obsługi zdarzeń czatu i zarządzania filtrem słów.
  */
+
 @Suppress("UnstableApiUsage")
 class SentinelX : JavaPlugin(), Listener {
 
+    // Word filtering in chat messages
+    // Filtrowanie słów w wiadomościach czatu
     private lateinit var wordFilter: WordFilter
+
+    // Whether to apply full censorship on chat messages
+    // Czy zastosować pełną cenzurę na wiadomościach czatu
     private var fullCensorship: Boolean = false
 
+    /**
+     * EN:
+     * Method called during plugin enable.
+     * Initializes configuration, registers commands and events,
+     * and also initializes the word filter and censorship settings.
+     *
+     * PL:
+     * Metoda wywoływana podczas włączania pluginu.
+     * Inicjalizuje konfigurację, rejestruje komendy i zdarzenia,
+     * a także inicjalizuje filtr słów i ustawienia cenzury.
+     */
     override fun onEnable() {
         saveDefaultConfig()
         val manager: LifecycleEventManager<Plugin> = this.lifecycleManager
@@ -39,14 +64,30 @@ class SentinelX : JavaPlugin(), Listener {
         val metrics = Metrics(this, pluginId)
     }
 
+    /**
+     * EN:
+     * Method called during plugin disable.
+     * Unregisters events associated with this plugin.
+     *
+     * PL:
+     * Metoda wywoływana podczas wyłączania pluginu.
+     * Odrejestrowuje zdarzenia związane z tym pluginem.
+     */
     override fun onDisable() {
         AsyncChatEvent.getHandlerList().unregister(this as Listener)
         AsyncChatEvent.getHandlerList().unregister(this as Plugin)
     }
 
     /**
-     * Restart my sentinel task
+     * EN:
+     * Restarts the MySentinel task.
+     * Unregisters events associated with this plugin,
+     * reloads the configuration, and updates the Sentinel settings.
      *
+     * PL:
+     * Restartuje zadanie MySentinel.
+     * Odrejestrowuje zdarzenia związane z tym pluginem,
+     * przeładowuje konfigurację i aktualizuje ustawienia Sentinel.
      */
     fun restartMySentinelTask() {
         try {
@@ -59,6 +100,17 @@ class SentinelX : JavaPlugin(), Listener {
         }
     }
 
+    /**
+     * EN:
+     * Updates the Sentinel settings.
+     * Reloads the list of banned words and censorship settings,
+     * then registers events associated with this plugin.
+     *
+     * PL:
+     * Aktualizuje ustawienia Sentinel.
+     * Przeładowuje listę zabronionych słów i ustawienia cenzury,
+     * a następnie rejestruje zdarzenia związane z tym pluginem.
+     */
     private fun updateSentinel() {
         val bannedWords: List<String> = config.getStringList("bannedWords")
         this.wordFilter = WordFilter(bannedWords)
@@ -67,9 +119,15 @@ class SentinelX : JavaPlugin(), Listener {
     }
 
     /**
-     * On chat
+     * EN:
+     * Handles a chat event.
+     * If the message contains a banned word, it censors the message.
      *
-     * @param event
+     * PL:
+     * Obsługuje zdarzenie czatu.
+     * Jeśli wiadomość zawiera zabronione słowo, cenzuruje wiadomość.
+     *
+     * @param event The chat event to handle. / Zdarzenie czatu do obsłużenia.
      */
     @EventHandler
     fun onChat(event: AsyncChatEvent) {
@@ -81,29 +139,50 @@ class SentinelX : JavaPlugin(), Listener {
 }
 
 /**
- * Word filter
+ * EN:
+ * Class for word filtering.
+ * This class contains methods for checking if a message contains a banned word,
+ * and for censoring a message.
  *
- * @property bannedWords
- * @constructor Create empty Word filter
+ * PL:
+ * Klasa do filtrowania słów.
+ * Ta klasa zawiera metody do sprawdzania, czy wiadomość zawiera zabronione słowo,
+ * a także do cenzurowania wiadomości.
+ *
+ * @property bannedWords List of banned words. / Lista zabronionych słów.
  */
 class WordFilter(private val bannedWords: List<String>) {
 
     /**
-     * Contains banned word
+     * EN:
+     * Checks if a message contains a banned word.
      *
-     * @param message
-     * @return
+     * PL:
+     * Sprawdza, czy wiadomość zawiera zabronione słowo.
+     *
+     * @param message The message to check. / Wiadomość do sprawdzenia.
+     * @return True if the message contains a banned word, otherwise false. / Prawda, jeśli wiadomość zawiera zabronione słowo, w przeciwnym razie fałsz.
      */
     fun containsBannedWord(message: String): Boolean {
         return bannedWords.any { message.contains(it) }
     }
 
     /**
-     * Censor message
+     * EN:
+     * Censors a message.
+     * Replaces banned words with asterisks. If full censorship is enabled,
+     * replaces the entire word with asterisks. Otherwise, replaces everything but
+     * the first two letters with asterisks.
      *
-     * @param message
-     * @param fullCensorship
-     * @return
+     * PL:
+     * Cenzuruje wiadomość.
+     * Zamienia zabronione słowa na gwiazdki. Jeśli pełna cenzura jest włączona,
+     * zamienia całe słowo na gwiazdki. W przeciwnym razie zamienia wszystko oprócz
+     * pierwszych dwóch liter na gwiazdki.
+     *
+     * @param message The message to censor. / Wiadomość do ocenzurowania.
+     * @param fullCensorship Whether to apply full censorship. / Czy zastosować pełną cenzurę.
+     * @return The censored message. / Ocenzurowana wiadomość.
      */
     fun censorMessage(message: String, fullCensorship: Boolean): String {
         val words = message.split("\\s+".toRegex()).toMutableList()

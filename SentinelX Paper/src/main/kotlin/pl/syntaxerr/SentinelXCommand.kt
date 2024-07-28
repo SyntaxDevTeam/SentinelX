@@ -1,8 +1,8 @@
-package pl.syntaxerr.sentinelex
+package pl.syntaxerr
 
 import io.papermc.paper.command.brigadier.BasicCommand
 import io.papermc.paper.command.brigadier.CommandSourceStack
-import org.bukkit.plugin.PluginDescriptionFile
+import io.papermc.paper.plugin.lifecycle.event.LifecycleEventOwner
 import org.jetbrains.annotations.NotNull
 
 /**
@@ -15,7 +15,8 @@ import org.jetbrains.annotations.NotNull
 class SentinelXCommand(private val plugin: SentinelX) : BasicCommand {
 
     override fun execute(@NotNull stack: CommandSourceStack, @NotNull args: Array<String>) {
-        val pdf: PluginDescriptionFile = plugin.description
+        val pluginMeta = (plugin as LifecycleEventOwner).pluginMeta
+        val pdf = plugin.description
         if (args.isNotEmpty()) {
             when {
                 args[0].equals("help", ignoreCase = true) -> {
@@ -27,7 +28,7 @@ class SentinelXCommand(private val plugin: SentinelX) : BasicCommand {
                 }
                 args[0].equals("version", ignoreCase = true) -> {
                     if (stack.sender.hasPermission("SentinelX.version")) {
-                        stack.sender.sendRichMessage("<gray>#######################################\n#\n#   <gold>→ <bold>" + pdf.name + "</bold> ←\n<gray>#   <white>Autor: <bold><gold>" + pdf.authors + "</gold></bold>\n<gray>#   <white>WWW: <bold><gold><click:open_url:'" + pdf.website + "'>"  + pdf.website + "</click></gold></bold>\n<gray>#   <white>Wersja: <bold><gold>" + pdf.version + "</gold></bold><gray>\n#\n#######################################")
+                        stack.sender.sendRichMessage("<gray>#######################################\n#\n#   <gold>→ <bold>" + pluginMeta.name + "</bold> ←\n<gray>#   <white>Autor: <bold><gold>" + pdf.authors + "</gold></bold>\n<gray>#   <white>WWW: <bold><gold><click:open_url:'" + pdf.website + "'>"  + pdf.website + "</click></gold></bold>\n<gray>#   <white>Wersja: <bold><gold>" + pluginMeta.version + "</gold></bold><gray>\n#\n#######################################")
                     } else {
                         stack.sender.sendRichMessage("Nie masz uprawnień do tej komendy.")
                     }
