@@ -6,7 +6,7 @@
 
     <groupId>pl.syntaxerr</groupId>
     <artifactId>SentinelX</artifactId>
-    <version>1.0-Spigot</version>
+    <version>1.1-Spigot</version>
     <packaging>jar</packaging>
 
     <name>SentinelX</name>
