@@ -1,7 +1,7 @@
 # Config ver 1.1.2
 
 # Ustaw true jeśli chcesz zakrywać w całości cenzurowane słowo.
-fullCensorship: true
+fullCensorship: false
 bannedWords:
   - shit
   - sh!t

@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de51ba02-0d9f-4681-b6c3-a1b5916bc04a" name="Changes" comment="reorganization of directory structures">
+    <list default="true" id="de51ba02-0d9f-4681-b6c3-a1b5916bc04a" name="Changes" comment="Added: DocBlocks to classes and methods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/SentinelX.kt" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/SentinelX.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/SentinelXCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/SentinelXCommand.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SentinelX Spigot/src/main/kotlin/pl/syntaxerr/SentinelX.kt" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Spigot/src/main/kotlin/pl/syntaxerr/SentinelX.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SentinelX Spigot/src/main/kotlin/pl/syntaxerr/SentinelXCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Spigot/src/main/kotlin/pl/syntaxerr/SentinelXCommand.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SentinelX Paper/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/resources/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SentinelX Spigot/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Spigot/src/main/resources/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SentinelX Spigot/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Spigot/src/main/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +169,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722064414697</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="reorganization of directory structures">
+      <option name="closed" value="true" />
+      <created>1722150966898</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1722150966898</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added: DocBlocks to classes and methods">
+      <option name="closed" value="true" />
+      <created>1722150978485</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1722150978485</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -191,6 +206,7 @@
     <MESSAGE value="Added bStats" />
     <MESSAGE value="Update" />
     <MESSAGE value="reorganization of directory structures" />
-    <option name="LAST_COMMIT_MESSAGE" value="reorganization of directory structures" />
+    <MESSAGE value="Added: DocBlocks to classes and methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added: DocBlocks to classes and methods" />
   </component>
 </project>

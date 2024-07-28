@@ -5,3 +5,8 @@ api-version: '1.21'
 authors: [ Syntaxerr ]
 description: Cenzor zamieniający niecenzuralne słowa na ocenzurowaną wersję lub całkowicie je usuwający
 website: https://github.com/SyntaxDevTeam/SentinelX
+commands:
+  sentinelx:
+    description: Komenda pluginu SentinelX.
+  slx:
+    description: Komenda pluginu SentinelX.
