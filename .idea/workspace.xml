@@ -4,209 +4,66 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de51ba02-0d9f-4681-b6c3-a1b5916bc04a" name="Changes" comment="Added: DocBlocks to classes and methods">
+    <list default="true" id="a41df66c-03dd-4990-ad8a-28d6581b8215" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SentinelX Paper/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/resources/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SentinelX Spigot/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Spigot/src/main/resources/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SentinelX Spigot/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Spigot/src/main/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Kotlin Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;WieszczY85&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "SyntaxDevTeam"
   }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/SyntaxDevTeam/SentinelX&quot;,
-    &quot;accountId&quot;: &quot;15b86597-a798-4eb9-b1fc-236055129d38&quot;
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/SyntaxDevTeam/SentinelX",
+    "accountId": "15b86597-a798-4eb9-b1fc-236055129d38"
   }
-}</component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4
-}</component>
-  <component name="ProjectId" id="2jhc0lNpUmS2KzAy1IqHHGE0RrU" />
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2jsBAs67U5KlA3pDhnlaztMIoWp" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.SentinelX [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.SentinelX [package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.SentinelX [test].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.SentinelX [validate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JDK&quot;: &quot;corretto-21&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/emero/OneDrive/Dokumenty/GitHub - Projekty/SentinelX/SentinelX Spigot&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.6229885&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.SentinelX [clean].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JDK": "corretto-21",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/emero/OneDrive/Dokumenty/GitHub - Projekty/SentinelX/SentinelX Spigot",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;jdk.preference.JDK&quot;: [
-      &quot;21=C:/Users/emero/scoop/apps/corretto21-jdk/current&quot;
+  "keyToStringList": {
+    "jdk.preference.JDK": [
+      "22=C:/Users/emero/.jdks/corretto-22.0.2"
     ]
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\emero\OneDrive\Dokumenty\GitHub - Projekty\SentinelX\SentinelX Spigot\src\main\resources" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="SentinelX Spigot" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="SentinelX Spigot" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="de51ba02-0d9f-4681-b6c3-a1b5916bc04a" name="Changes" comment="" />
-      <created>1721842528909</created>
+      <changelist id="a41df66c-03dd-4990-ad8a-28d6581b8215" name="Changes" comment="" />
+      <created>1722165763546</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1721842528909</updated>
+      <updated>1722165763546</updated>
     </task>
-    <task id="LOCAL-00001" summary="Initial commit">
-      <option name="closed" value="true" />
-      <created>1721842928884</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1721842928884</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Initial commit">
-      <option name="closed" value="true" />
-      <created>1721843739367</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1721843739367</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Initial commit">
-      <option name="closed" value="true" />
-      <created>1721849818601</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1721849818601</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Initial commit">
-      <option name="closed" value="true" />
-      <created>1721849913268</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1721849913268</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Update: Plugin version + kotlin version">
-      <option name="closed" value="true" />
-      <created>1721850499186</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1721850499186</updated>
-    </task>
-    <task id="LOCAL-00006" summary="TODO: Add SPONGE support">
-      <option name="closed" value="true" />
-      <created>1721923303561</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1721923303561</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Added bStats">
-      <option name="closed" value="true" />
-      <created>1721924649492</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1721924649492</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Update">
-      <option name="closed" value="true" />
-      <created>1722013388390</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1722013388390</updated>
-    </task>
-    <task id="LOCAL-00009" summary="reorganization of directory structures">
-      <option name="closed" value="true" />
-      <created>1722064414697</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1722064414697</updated>
-    </task>
-    <task id="LOCAL-00010" summary="reorganization of directory structures">
-      <option name="closed" value="true" />
-      <created>1722150966898</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1722150966898</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Added: DocBlocks to classes and methods">
-      <option name="closed" value="true" />
-      <created>1722150978485</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1722150978485</updated>
-    </task>
-    <option name="localTasksCounter" value="12" />
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial commit" />
-    <MESSAGE value="Update: Plugin version + kotlin version" />
-    <MESSAGE value="TODO: Add SPONGE support" />
-    <MESSAGE value="Added bStats" />
-    <MESSAGE value="Update" />
-    <MESSAGE value="reorganization of directory structures" />
-    <MESSAGE value="Added: DocBlocks to classes and methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added: DocBlocks to classes and methods" />
   </component>
 </project>
