@@ -25,7 +25,7 @@ This plugin is available under the MIT license. Details can be found in the LICE
 Thank you for using SentinelX! I hope it meets your expectations. 😊
 
 
-
+---
 <details>
 <summary>Polska wersja README?</summary>
 
