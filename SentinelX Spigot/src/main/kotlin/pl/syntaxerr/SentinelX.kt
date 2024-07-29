@@ -75,7 +75,7 @@ class WordFilter(private val bannedWords: List<String>) {
         val words = message.split("\\s+".toRegex()).toMutableList()
         for (i in words.indices) {
             for (bannedWord in bannedWords) {
-                if (words[i].lowercase(Locale.getDefault()).contains(bannedWord.lowercase(Locale.getDefault()))) {
+                if (words[i].toLowerCase(Locale.getDefault()).contains(bannedWord.toLowerCase(Locale.getDefault()))) {
                     val replacement = if (fullCensorship) "*".repeat(words[i].length) else words[i].substring(0, 2) + "*".repeat(words[i].length - 2)
                     words[i] = replacement
                 }
