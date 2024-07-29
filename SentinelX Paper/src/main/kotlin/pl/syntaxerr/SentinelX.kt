@@ -13,17 +13,9 @@ import org.bukkit.plugin.java.JavaPlugin
 import java.util.*
 
 /**
- * EN:
- * Main class of the SentinelX plugin.
- * This class inherits from JavaPlugin and implements the Listener interface.
- * It contains methods for handling plugin enable and disable events,
- * as well as chat event handling and word filter management methods.
+ * Sentinel x
  *
- * PL:
- * Główna klasa pluginu SentinelX.
- * Ta klasa dziedziczy po JavaPlugin i implementuje interfejs Listener.
- * Zawiera metody do obsługi zdarzeń włączania i wyłączania pluginu,
- * a także metody do obsługi zdarzeń czatu i zarządzania filtrem słów.
+ * @constructor Create empty Sentinel x
  */
 
 @Suppress("UnstableApiUsage")
@@ -79,15 +71,8 @@ class SentinelX : JavaPlugin(), Listener {
     }
 
     /**
-     * EN:
-     * Restarts the MySentinel task.
-     * Unregisters events associated with this plugin,
-     * reloads the configuration, and updates the Sentinel settings.
+     * Restart my sentinel task
      *
-     * PL:
-     * Restartuje zadanie MySentinel.
-     * Odrejestrowuje zdarzenia związane z tym pluginem,
-     * przeładowuje konfigurację i aktualizuje ustawienia Sentinel.
      */
     fun restartMySentinelTask() {
         try {
@@ -136,6 +121,13 @@ class SentinelX : JavaPlugin(), Listener {
             event.message(Component.text(wordFilter.censorMessage(message, fullCensorship)))
         }
     }
+    /**
+     * EN:
+     * Add banned word
+     *
+     * PL: Dodawanie nowego zakazanego słowa
+     * @param word Banned word / Dodane słowo
+     */
     fun addBannedWord(word: String) {
         val bannedWords = config.getStringList("bannedWords")
         if (!bannedWords.contains(word)) {
