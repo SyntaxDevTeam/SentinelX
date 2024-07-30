@@ -6,10 +6,10 @@ import io.papermc.paper.plugin.lifecycle.event.LifecycleEventOwner
 import org.jetbrains.annotations.NotNull
 
 /**
- * Sentinel x command
+ * SentinelX command
  *
  * @property plugin
- * @constructor Create empty Sentinel x command
+ * @constructor Create empty SentinelXCommand
  */
 @Suppress("UnstableApiUsage")
 class SentinelXCommand(private val plugin: SentinelX) : BasicCommand {
@@ -21,7 +21,7 @@ class SentinelXCommand(private val plugin: SentinelX) : BasicCommand {
             when {
                 args[0].equals("help", ignoreCase = true) -> {
                     if (stack.sender.hasPermission("SentinelX.help")) {
-                        stack.sender.sendRichMessage("<gray>#######################################\n#\n#  <gold>Dostępne komendy dla My-Sentinel:\n<gray>#\n#  <gold>/slx help <gray>- <white>Wyświetla ten monit.\n<gray>#  <gold>/slx version <gray>- <white>Pokazuje info pluginu. \n<gray>#  <gold>/slx reload <gray>- <white>Przeładowuje plik konfiguracyjny\n<gray>#\n#######################################")
+                        stack.sender.sendRichMessage("<gray>#######################################\n#\n#  <gold>Dostępne komendy dla " + pluginMeta.name + ":\n<gray>#\n#  <gold>/slx help <gray>- <white>Wyświetla ten monit.\n<gray>#  <gold>/slx version <gray>- <white>Pokazuje info pluginu. \n<gray>#  <gold>/slx reload <gray>- <white>Przeładowuje plik konfiguracyjny\n<gray>#\n#######################################")
                     } else {
                         stack.sender.sendMessage("Nie masz uprawnień do tej komendy.")
                     }
