@@ -8,6 +8,7 @@ import org.bukkit.plugin.Plugin
 import org.bukkit.plugin.java.JavaPlugin
 import java.util.*
 
+@Suppress("UNUSED_VARIABLE")
 class SentinelX : JavaPlugin(), Listener {
 
     private lateinit var wordFilter: WordFilter
