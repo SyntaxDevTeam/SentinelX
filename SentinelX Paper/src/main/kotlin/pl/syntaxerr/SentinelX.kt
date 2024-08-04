@@ -38,8 +38,7 @@ class SentinelX : JavaPlugin(), Listener {
             commands.register("sentinelx", "Komenda pluginu SentinelX. Wpisz /slx help aby sprawdzic dostępne komendy", SentinelXCommand(this))
             commands.register("slx", "Komenda pluginu SentinelX. Wpisz /sentinelx help aby sprawdzic dostępne komendy", SentinelXCommand(this))
         }
-        val bannedWords: MutableList<String> = config.getStringList("bannedWords").toMutableList()
-        this.wordFilter = WordFilter(bannedWords)
+        this.wordFilter = WordFilter(this)
         this.fullCensorship = config.getBoolean("fullCensorship")
         server.pluginManager.registerEvents(SentinelXChat(wordFilter, fullCensorship), this)
         val pluginId = 22781
@@ -67,16 +66,13 @@ class SentinelX : JavaPlugin(), Listener {
     }
 
     private fun updateSentinel() {
-        val bannedWords: MutableList<String> = config.getStringList("bannedWords").toMutableList()
-        this.wordFilter = WordFilter(bannedWords)
+        this.wordFilter = WordFilter(this)
         this.fullCensorship = config.getBoolean("fullCensorship")
         server.pluginManager.registerEvents(SentinelXChat(wordFilter, fullCensorship), this)
     }
 
     fun addBannedWord(word: String) {
         wordFilter.addBannedWord(word)
-        config.set("bannedWords", wordFilter.bannedWords)
-        saveConfig()
         restartMySentinelTask()
     }
 

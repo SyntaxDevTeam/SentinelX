@@ -1,8 +1,30 @@
 package pl.syntaxerr.base
 
+import org.bukkit.configuration.file.YamlConfiguration
+import org.bukkit.plugin.java.JavaPlugin
+import java.io.File
 import java.util.*
 
-class WordFilter(var bannedWords: MutableList<String>) {
+class WordFilter(private val plugin: JavaPlugin) {
+
+    var bannedWords: MutableList<String> = mutableListOf()
+
+    init {
+        loadBannedWords()
+    }
+
+    private fun loadBannedWords() {
+        val file = File(plugin.dataFolder, "banned_words.yml")
+        if (!file.exists()) {
+            file.createNewFile()
+            val config = YamlConfiguration()
+            config.set("bannedWords", listOf<String>())
+            config.save(file)
+        }
+        val config = YamlConfiguration.loadConfiguration(file)
+        bannedWords = config.getStringList("bannedWords").toMutableList()
+    }
+
 
     fun containsBannedWord(message: String): Boolean {
         return bannedWords.any { message.contains(it) }
@@ -24,6 +46,14 @@ class WordFilter(var bannedWords: MutableList<String>) {
     fun addBannedWord(word: String) {
         if (!bannedWords.contains(word)) {
             bannedWords.add(word)
+            saveBannedWords()
         }
+    }
+
+    private fun saveBannedWords() {
+        val file = File(plugin.dataFolder, "banned_words.yml")
+        val config = YamlConfiguration()
+        config.set("bannedWords", bannedWords)
+        config.save(file)
     }
 }

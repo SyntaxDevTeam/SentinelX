@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a41df66c-03dd-4990-ad8a-28d6581b8215" name="Changes" comment="Update: UNUSED_VARIABLE metrics">
-      <change afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/base/WordFilter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/eventhandler/SentinelXChat.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/helpers/CustomEvent.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/helpers/Logger.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/helpers/PluginPrioritizer.kt" afterDir="false" />
+    <list default="true" id="a41df66c-03dd-4990-ad8a-28d6581b8215" name="Changes" comment="Refactor: Move event handling to separate class, move addBannedWord method to WordFilter&#10;Drop: drop support for Spigot server engines">
+      <change afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/resources/banned_words.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SentinelX Paper/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Paper/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/SentinelX.kt" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/SentinelX.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/SentinelXCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/commans/SentinelXCommand.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/base/WordFilter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/base/WordFilter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SentinelX Paper/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/resources/config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -165,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722622741693</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Refactor: Move event handling to separate class, move addBannedWord method to WordFilter&#10;Drop: drop support for Spigot server engines">
+      <option name="closed" value="true" />
+      <created>1722769276888</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1722769276888</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,6 +193,7 @@
     <MESSAGE value="Added: License" />
     <MESSAGE value="Update: names" />
     <MESSAGE value="Update: UNUSED_VARIABLE metrics" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update: UNUSED_VARIABLE metrics" />
+    <MESSAGE value="Refactor: Move event handling to separate class, move addBannedWord method to WordFilter&#10;Drop: drop support for Spigot server engines" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor: Move event handling to separate class, move addBannedWord method to WordFilter&#10;Drop: drop support for Spigot server engines" />
   </component>
 </project>
