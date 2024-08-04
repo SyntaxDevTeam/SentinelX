@@ -4,19 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a41df66c-03dd-4990-ad8a-28d6581b8215" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="a41df66c-03dd-4990-ad8a-28d6581b8215" name="Changes" comment="Update: UNUSED_VARIABLE metrics">
+      <change afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/base/WordFilter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/eventhandler/SentinelXChat.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/helpers/CustomEvent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/helpers/Logger.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/helpers/PluginPrioritizer.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/SentinelX.kt" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/SentinelX.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/SentinelXCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/SentinelXCommand.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SentinelX Spigot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Spigot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SentinelX Spigot/src/main/kotlin/pl/syntaxerr/SentinelX.kt" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Spigot/src/main/kotlin/pl/syntaxerr/SentinelX.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SentinelX Spigot/src/main/kotlin/pl/syntaxerr/SentinelXCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Spigot/src/main/kotlin/pl/syntaxerr/SentinelXCommand.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/SentinelXCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/commans/SentinelXCommand.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SentinelX Paper/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/resources/config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,27 +50,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.SentinelX [clean].executor": "Run",
-    "Maven.SentinelX [install].executor": "Run",
-    "Maven.SentinelX [package].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JDK": "corretto-21",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/emero/OneDrive/Dokumenty/GitHub - Projekty/SentinelX/SentinelX Spigot",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.SentinelX [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.SentinelX [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.SentinelX [package].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JDK&quot;: &quot;corretto-21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/emero/OneDrive/Dokumenty/GitHub - Projekty/SentinelX/SentinelX Spigot&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   },
-  "keyToStringList": {
-    "jdk.preference.JDK": [
-      "22=C:/Users/emero/.jdks/corretto-22.0.2"
+  &quot;keyToStringList&quot;: {
+    &quot;jdk.preference.JDK&quot;: [
+      &quot;22=C:/Users/emero/.jdks/corretto-22.0.2&quot;
     ]
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="pl.syntaxerr.commans" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -71,6 +85,87 @@
       <option name="presentableId" value="Default" />
       <updated>1722165763546</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added: method for adding words">
+      <option name="closed" value="true" />
+      <created>1722192736789</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1722192736789</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added: method for adding words">
+      <option name="closed" value="true" />
+      <created>1722192748105</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1722192748105</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added: method for adding words&#10;HotFix: Minimessage formatting display">
+      <option name="closed" value="true" />
+      <created>1722192811960</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1722192811960</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added: method for adding words">
+      <option name="closed" value="true" />
+      <created>1722192828561</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722192828561</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Update: Plugin version">
+      <option name="closed" value="true" />
+      <created>1722192891905</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722192891905</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Update: DocBlock info">
+      <option name="closed" value="true" />
+      <created>1722268439647</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1722268439647</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fix unresolved reference error by replacing ‘lowercase’ with ‘toLowerCase">
+      <option name="closed" value="true" />
+      <created>1722268579947</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1722268579947</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added: License">
+      <option name="closed" value="true" />
+      <created>1722362024371</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1722362024371</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Update: names">
+      <option name="closed" value="true" />
+      <created>1722362121067</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1722362121067</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Update: UNUSED_VARIABLE metrics">
+      <option name="closed" value="true" />
+      <created>1722622741693</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1722622741693</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -83,5 +178,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added: method for adding words&#10;HotFix: Minimessage formatting display" />
+    <MESSAGE value="Added: method for adding words" />
+    <MESSAGE value="Update: Plugin version" />
+    <MESSAGE value="Update: DocBlock info" />
+    <MESSAGE value="Fix unresolved reference error by replacing ‘lowercase’ with ‘toLowerCase" />
+    <MESSAGE value="Added: License" />
+    <MESSAGE value="Update: names" />
+    <MESSAGE value="Update: UNUSED_VARIABLE metrics" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update: UNUSED_VARIABLE metrics" />
   </component>
 </project>

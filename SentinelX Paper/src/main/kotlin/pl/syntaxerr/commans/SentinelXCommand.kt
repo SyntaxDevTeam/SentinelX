@@ -1,9 +1,10 @@
-package pl.syntaxerr
+package pl.syntaxerr.commans
 
 import io.papermc.paper.command.brigadier.BasicCommand
 import io.papermc.paper.command.brigadier.CommandSourceStack
 import io.papermc.paper.plugin.lifecycle.event.LifecycleEventOwner
 import org.jetbrains.annotations.NotNull
+import pl.syntaxerr.SentinelX
 
 /**
  * SentinelX command
