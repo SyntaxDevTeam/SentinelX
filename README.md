@@ -4,7 +4,7 @@ SentinelX is a modern plugin for Minecraft servers, whose main task is to censor
 
 ## Information
 * [x] SentinelX was designed specifically for (currently) the latest version of Minecraft 1.21
-* [x] Optimized for Bukkit/Spigot and Paper engines (choose the appropriate version for your server)
+* [x] Optimized for ~~Bukkit/Spigot and~~ Paper engines (choose the appropriate version for your server)
 * [x] Requires Java 21 or newer to work correctly
 * [x] Written in the modern programming language Kotlin, which is more expressive and safer than Java.
 
@@ -36,7 +36,7 @@ automatycznym przez zamianę wulgaryzmów w ich wersje ocenzurowane bądź też 
 
 ## Informacje
 * [x] SentinelX został zaprojektowany specjalnie pod (obecnie) najnowszą wersję Minecraft 1.21
-* [x] Zoptymalizowano pod silniki Bukkit/Spigot i Paper (wybierz odpowiednią wersję dla swojego serwera)
+* [x] Zoptymalizowano pod silniki ~~Bukkit/Spigot i~~ Paper (wybierz odpowiednią wersję dla swojego serwera)
 * [x] Wymaga Javy 21 lub nowszej, aby działać poprawnie
 * [x] Napisany w nowoczesnym języku programowania Kotlin, który jest bardziej ekspresyjny i bezpieczny niż Java.
 
