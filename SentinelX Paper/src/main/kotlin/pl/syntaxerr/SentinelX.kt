@@ -60,8 +60,7 @@ class SentinelX : JavaPlugin(), Listener {
             super.reloadConfig()
             updateSentinel()
         } catch (e: Exception) {
-            logger.severe("Wystąpił błąd podczas przełądowania konfiguracji: " + e.message)
-            e.printStackTrace()
+            logger.err("Wystąpił błąd podczas przełądowania konfiguracji: " + e.message)
         }
     }
 
