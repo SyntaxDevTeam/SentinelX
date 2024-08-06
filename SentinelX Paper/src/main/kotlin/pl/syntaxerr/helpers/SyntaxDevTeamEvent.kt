@@ -3,8 +3,11 @@ package pl.syntaxerr.helpers
 import org.bukkit.event.Event
 import org.bukkit.event.HandlerList
 
-class CustomEvent(val pluginName: String, val priority: Int) : Event() {
-
+class SyntaxDevTeamEvent(
+    val teamName: String,
+    val pluginName: String,
+    val prior: Int
+) : Event() {
     companion object {
         private val handlers = HandlerList()
 
@@ -18,3 +21,4 @@ class CustomEvent(val pluginName: String, val priority: Int) : Event() {
         return getHandlerList()
     }
 }
+

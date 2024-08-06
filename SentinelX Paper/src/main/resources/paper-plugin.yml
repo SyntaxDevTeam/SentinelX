@@ -1,7 +1,7 @@
 name: SentinelX
-version: '1.0-SNAPSHOT'
+version: '${project.version}'
 main: pl.syntaxerr.SentinelX
 api-version: '1.21'
-authors: [ Syntaxerr ]
+authors: [SyntaxDevTeam]
 description: Cenzor zamieniający niecenzuralne słowa na ocenzurowaną wersję lub całkowicie je usuwający
 website: https://github.com/SyntaxDevTeam/SentinelX

@@ -16,21 +16,22 @@ import pl.syntaxerr.helpers.*
 @Suppress("UnstableApiUsage")
 class SentinelX : JavaPlugin(), Listener {
 
-    lateinit var logger: Logger
+    private lateinit var logger: Logger
     private val pluginMetas = this.pluginMeta
     private var config = getConfig()
     private var debugMode = config.getBoolean("debug")
     private lateinit var wordFilter: WordFilter
     private var fullCensorship: Boolean = false
-    private lateinit var pluginPrioritizer: PluginPrioritizer
+    private val eventListener = EventListener()
 
     override fun onLoad() {
         logger = Logger(pluginMetas, debugMode)
-        pluginPrioritizer = PluginPrioritizer(this)
     }
 
     override fun onEnable() {
         saveDefaultConfig()
+        val sxevent = SyntaxDevTeamEvent("SyntaxDevTeam", "SentinelX", 1)
+        server.pluginManager.callEvent(sxevent)
 
         val manager: LifecycleEventManager<Plugin> = this.lifecycleManager
         manager.registerEventHandler(LifecycleEvents.COMMANDS) { event ->
@@ -43,15 +44,16 @@ class SentinelX : JavaPlugin(), Listener {
         server.pluginManager.registerEvents(SentinelXChat(wordFilter, fullCensorship), this)
         val pluginId = 22781
         Metrics(this, pluginId)
-        pluginPrioritizer.registerPlugin()
-        server.scheduler.runTaskLater(this, Runnable {
-            val highestPriorityPlugin = pluginPrioritizer.registeredPlugins.maxByOrNull { it.second }
-            logger.debug("Highest priority plugin: $highestPriorityPlugin")
 
-            if (highestPriorityPlugin?.first == name) {
-                pluginPrioritizer.displayLogo()
-            }
-        }, 20L)
+        val highestPriorityEvent = eventListener.getHighestPriorityEvent()
+        val pluginsByPriority = eventListener.getPluginsByPriorityDescending()
+
+        if (highestPriorityEvent != null && highestPriorityEvent.pluginName == "SentinelX") {
+            logger.debug("Highest priority event: ${highestPriorityEvent.pluginName} with priority ${highestPriorityEvent.prior}")
+            logger.pluginStart(pluginsByPriority)
+        } else {
+            logger.debug("No events recorded or highest priority event does not belong to this plugin.")
+        }
     }
 
     fun restartMySentinelTask() {
