@@ -10,7 +10,7 @@ import org.bukkit.plugin.Plugin
 import org.bukkit.plugin.java.JavaPlugin
 import pl.syntaxerr.base.WordFilter
 import pl.syntaxerr.commans.SentinelXCommand
-import pl.syntaxerr.eventhandler.SentinelXChat
+import pl.syntaxerr.eventhandler.*
 import pl.syntaxerr.helpers.*
 
 @Suppress("UnstableApiUsage")
@@ -22,7 +22,8 @@ class SentinelX : JavaPlugin(), Listener {
     private var debugMode = config.getBoolean("debug")
     private lateinit var wordFilter: WordFilter
     private var fullCensorship: Boolean = false
-    private val eventListener = EventListener()
+    private lateinit var pluginManager: PluginManager
+
 
     override fun onLoad() {
         logger = Logger(pluginMetas, debugMode)
@@ -30,8 +31,6 @@ class SentinelX : JavaPlugin(), Listener {
 
     override fun onEnable() {
         saveDefaultConfig()
-        val sxevent = SyntaxDevTeamEvent("SyntaxDevTeam", "SentinelX", 1)
-        server.pluginManager.callEvent(sxevent)
 
         val manager: LifecycleEventManager<Plugin> = this.lifecycleManager
         manager.registerEventHandler(LifecycleEvents.COMMANDS) { event ->
@@ -44,15 +43,22 @@ class SentinelX : JavaPlugin(), Listener {
         server.pluginManager.registerEvents(SentinelXChat(wordFilter, fullCensorship), this)
         val pluginId = 22781
         Metrics(this, pluginId)
+        // Inicjalizacja PluginManager z przekazaniem obiektu JavaPlugin
+        pluginManager = PluginManager(this)
 
-        val highestPriorityEvent = eventListener.getHighestPriorityEvent()
-        val pluginsByPriority = eventListener.getPluginsByPriorityDescending()
+        // Pobranie listy pluginów z zewnętrznego źródła
+        val externalPlugins = pluginManager.fetchPluginsFromExternalSource("https://raw.githubusercontent.com/SyntaxDevTeam/plugins-list/main/plugins.json")
 
-        if (highestPriorityEvent != null && highestPriorityEvent.pluginName == "SentinelX") {
-            logger.debug("Highest priority event: ${highestPriorityEvent.pluginName} with priority ${highestPriorityEvent.prior}")
-            logger.pluginStart(pluginsByPriority)
-        } else {
-            logger.debug("No events recorded or highest priority event does not belong to this plugin.")
+        // Pobranie listy załadowanych pluginów
+        val loadedPlugins = pluginManager.fetchLoadedPlugins()
+
+        // Pobranie nazwy pluginu z najwyższym priorytetem
+        val highestPriorityPlugin = pluginManager.getHighestPriorityPlugin(externalPlugins, loadedPlugins)
+
+        // Sprawdzenie, czy nazwa pluginu z najwyższym priorytetem to ta sama co aktualnie uruchamiany plugin
+        if (highestPriorityPlugin == pluginMetas.name) {
+            val syntaxDevTeamPlugins = loadedPlugins.filter { it != pluginMetas.name }
+            logger.pluginStart(syntaxDevTeamPlugins)
         }
     }
 

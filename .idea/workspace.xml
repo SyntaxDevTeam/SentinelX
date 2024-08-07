@@ -4,27 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a41df66c-03dd-4990-ad8a-28d6581b8215" name="Changes" comment="Fixed: how to display Exception error">
-      <change afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/helpers/EventListener.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/helpers/SyntaxDevTeamEvent.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SentinelX Spigot (abandoned)/SentinelX (2).iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SentinelX Spigot (abandoned)/dependency-reduced-pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SentinelX Spigot (abandoned)/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SentinelX Spigot (abandoned)/src/main/kotlin/pl/syntaxerr/SentinelX.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SentinelX Spigot (abandoned)/src/main/kotlin/pl/syntaxerr/SentinelXCommand.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SentinelX Spigot (abandoned)/src/main/resources/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SentinelX Spigot (abandoned)/src/main/resources/plugin.yml" afterDir="false" />
+    <list default="true" id="a41df66c-03dd-4990-ad8a-28d6581b8215" name="Changes" comment="Added #SyntaxDevTeamEvent">
+      <change afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/helpers/PluginManager.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/SentinelX.kt" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/SentinelX.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/helpers/CustomEvent.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/helpers/EventListener.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/helpers/Logger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/helpers/Logger.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/helpers/PluginPrioritizer.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SentinelX Paper/src/main/resources/paper-plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/SentinelX Paper/src/main/resources/paper-plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SentinelX Spigot/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SentinelX Spigot/src/main/kotlin/pl/syntaxerr/SentinelX.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SentinelX Spigot/src/main/kotlin/pl/syntaxerr/SentinelXCommand.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SentinelX Spigot/src/main/resources/config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SentinelX Spigot/src/main/resources/plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SentinelX Paper/src/main/kotlin/pl/syntaxerr/helpers/SyntaxDevTeamEvent.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +70,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="pl.syntaxerr.eventhandler" />
       <recent name="pl.syntaxerr.commans" />
     </key>
   </component>
@@ -200,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722771595031</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added #SyntaxDevTeamEvent">
+      <option name="closed" value="true" />
+      <created>1722962365709</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1722962365709</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -226,6 +221,7 @@
     <MESSAGE value="Refactor: Move event handling to separate class, move addBannedWord method to WordFilter&#10;Drop: drop support for Spigot server engines" />
     <MESSAGE value="Feature: Load banned words from separate YAML file&#10;Update: updated plugin version" />
     <MESSAGE value="Fixed: how to display Exception error" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed: how to display Exception error" />
+    <MESSAGE value="Added #SyntaxDevTeamEvent" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added #SyntaxDevTeamEvent" />
   </component>
 </project>
